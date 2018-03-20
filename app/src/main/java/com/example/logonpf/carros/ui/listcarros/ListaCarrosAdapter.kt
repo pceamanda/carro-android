@@ -19,7 +19,10 @@ class ListaCarrosAdapter(private val carros: List<Carro>,
     }
 
     override fun onBindViewHolder(holder: MeuViewHolder?, position: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        val carro = carros[position]
+        holder?.let {
+            it.itemView
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MeuViewHolder {

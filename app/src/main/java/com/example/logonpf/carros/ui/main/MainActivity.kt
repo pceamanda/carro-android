@@ -1,7 +1,7 @@
 package com.example.logonpf.carros.ui.main
 
 import android.os.Bundle
-import android.support.design.widget.BottomNavigationView
+import android.support.design.widget.BottomNavigationView.OnNavigationItemSelectedListener
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
+    private val mOnNavigationItemSelectedListener = OnNavigationItemSelectedListener { item ->
         when (item.itemId) {
             R.id.navigation_lista -> {
                 changeFragment(ListaCarrosFragment())
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_sobre -> {
-                Toast.makeText(this, "Em construção", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Em construção, boa sorte champs!", Toast.LENGTH_LONG).show()
                 return@OnNavigationItemSelectedListener true
             }
         }

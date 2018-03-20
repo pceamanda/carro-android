@@ -9,7 +9,7 @@
     <item
         android:id="@+id/navigation_novo"
         android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="Novos Carros" />
+        android:title="Novo Carro" />
 
     <item
         android:id="@+id/navigation_sobre"
